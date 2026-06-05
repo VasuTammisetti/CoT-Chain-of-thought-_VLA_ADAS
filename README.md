@@ -3,9 +3,23 @@
 A small autonomous-driving agent that **reasons before it acts**. For each front-camera frame it detects the surrounding objects in 3D, asks a vision-language model *why* it should do something, predicts the actual driving trajectory with a trained action head, and scores the safety and longitudinal control of the decision.
 
 <p align="center">
-  <img src="assets/cot_vla_nuscenes-new.gif" width="100%">
+  <img src="cot_vla_nuscenes-new.gif" width="100%">
 </p>
+## 3D detection on nuScenes
 
+Ground-truth 3D boxes with class and metric distance, on the front camera (Singapore night scenes).
+
+<p align="center">
+  <img src="Det-1.jpg" width="49%">
+  <img src="Det-2.jpg" width="49%">
+</p>
+<p align="center">
+  <img src="Det-3.jpg" width="49%">
+  <img src="Det-4.jpg" width="49%">
+</p>
+<p align="center">
+  <img src="Det-5.jpg" width="80%">
+</p>
 > The language model gives the **reasoning** ("pedestrian close, slow down"); a trained SigLIP + cross-attention head gives the **precise trajectory**. Trained and evaluated on the **nuScenes mini** split, so the trajectory ground truth is the car's real recorded path.
 
 This is an implementation / learning project that follows the recent chain-of-thought VLA-for-driving line of work (e.g. CoT4AD, AutoDrive-R²) — it is not a novel architecture. The goal was to build the full perception → reasoning → planning → control loop end to end and understand the trade-offs.
