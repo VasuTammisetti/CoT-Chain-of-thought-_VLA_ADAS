@@ -3,7 +3,7 @@
 A small autonomous-driving agent that **reasons before it acts**. For each front-camera frame it detects the surrounding objects in 3D, asks a vision-language model *why* it should do something, predicts the actual driving trajectory with a trained action head, and scores the safety and longitudinal control of the decision.
 
 <p align="center">
-  <img src="assets/cot_vla_nuscenes.gif" width="100%">
+  <img src="assets/cot_vla_nuscenes-new.gif" width="100%">
 </p>
 
 > The language model gives the **reasoning** ("pedestrian close, slow down"); a trained SigLIP + cross-attention head gives the **precise trajectory**. Trained and evaluated on the **nuScenes mini** split, so the trajectory ground truth is the car's real recorded path.
