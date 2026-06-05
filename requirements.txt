@@ -1,0 +1,20 @@
+# CoT-VLA — Colab (T4) dependencies
+# nuScenes devkit requires numpy<2; pin compatible scientific stack.
+numpy==1.26.4
+scipy
+scikit-learn
+shapely==2.0.3
+nuscenes-devkit
+torch
+torchvision
+transformers
+accelerate
+bitsandbytes>=0.46.1
+sentence-transformers
+opencv-python-headless
+pyquaternion
+matplotlib
+imageio
+imageio-ffmpeg
+tqdm
+Pillow
