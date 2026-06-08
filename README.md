@@ -56,7 +56,7 @@ On the nuScenes-mini test scenes (held-out, early-stopped at the best validation
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| Trajectory ADE | ≈ 4.6 m | over a 4.5 s horizon, vs. real ego-trajectory |
+| Trajectory ADE | ≈ 2.9 m | over a 4.5 s horizon, vs. real ego-trajectory |
 | Steering accuracy (CoT) | ≈ 82% | LLaVA vs. trajectory-derived label |
 | Avg. safety score | ≈ 70 / 100 | obstacle proximity + model agreement + action + confidence |
 | Objects / frame | ≈ 8 | ground-truth 3D boxes |
